@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>javascript-calculator</title>
+</head>
+<body class="bg">
+    <marquee behavior="scroll" direction="right" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()" class="heading">
+        <h1>welcome!</h1>
+    </marquee>
+    <div class="add">
+        <h4>What will happen if you add the numbers below?</h4>
+        <h3>15 + 10</h3>
+        <button ondblclick="addition()">result</button>
+        <p>=</p>
+        <p id="add-r"></p>
+    </div>
+    <div class="sub">
+        <h4>What will happen if you minus the numbers below?</h4>
+        <h3>15 - 10</h3>
+        <button ondblclick="subtraction()">result</button>
+        <p>=</p>
+        <p id="sub-r"></p>
+    </div>
+    <div class="mult">
+        <h4>What will happen if you multiply the numbers below?</h4>
+        <h3>15 * 10</h3>
+        <button ondblclick="multiply()">result</button>
+        <p>=</p>
+        <p id="mult-r"></p>
+    </div>
+    <div class="divi">
+        <h4>What will happen if you divide the numbers below?</h4>
+        <h3>15 / 10</h3>
+        <button ondblclick="division()">result</button>
+        <p>=</p>
+        <p id="divi-r"></p>
+    </div>
+    <div class="remi">
+        <h4>What will be the reminder of this numbers below?</h4>
+        <h3>15 % 10</h3>
+        <button ondblclick="reminder()">result</button>
+        <p>=</p>
+        <p id="remi-r"></p>
+    </div>
+
+
+
+    <script>
+        function addition(){
+            var x = 15;
+            var y = 10;
+            var add = x + y;
+            document.getElementById('add-r').innerHTML = add;
+        }
+
+        function subtraction(){
+            var x = 15;
+            var y = 10;
+            var add = x - y;
+            document.getElementById('sub-r').innerHTML = add;
+        }
+
+        function multiply(){
+            var x = 15;
+            var y = 10;
+            var add = x * y;
+            document.getElementById('mult-r').innerHTML = add;
+        }
+
+        function division(){
+            var x = 15;
+            var y = 10;
+            var add = x / y;
+            document.getElementById('divi-r').innerHTML = add;
+        }
+        function reminder(){
+            var x = 15;
+            var y = 10;
+            var add = x % y;
+            document.getElementById('remi-r').innerHTML = add;
+        }
+    </script>
+</body>
+</html>
